@@ -27,6 +27,7 @@ A virtual piano that can be played using hand gestures, powered by computer visi
 2. Install the required packages:
 ```bash
 pip install -r requirements.txt
+pip install mediapipe
 ```
 3. Create a 'sounds' directory and add piano note sound files (WAV format)
    - Required sound files: C.wav, D.wav, E.wav, F.wav, G.wav, A.wav, B.wav, C#.wav, D#.wav, F#.wav, G#.wav, A#.wav

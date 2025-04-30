@@ -36,14 +36,19 @@ class PianoUI:
 
     def setup_keys(self):
         # White key dimensions
-        white_key_width = 120  # Increased width
-        white_key_height = 350  # Adjusted height
-        start_x = 200  # Centered more
-        start_y = 150  # Moved down a bit
+        white_key_width = 120
+        white_key_height = 350
+        num_white_keys = 7
+        total_white_width = white_key_width * num_white_keys
+        
+        # Calculate start position - moved left by 200 pixels
+        frame_width = 1920
+        start_x = ((frame_width - total_white_width) // 2) - 200
+        start_y = 50
 
         # Black key dimensions
-        black_key_width = 70  # Proportionally increased
-        black_key_height = 200  # Adjusted height
+        black_key_width = 70
+        black_key_height = 200
 
         # Define white keys
         white_notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
